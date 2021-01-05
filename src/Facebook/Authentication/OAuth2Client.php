@@ -258,7 +258,7 @@ class OAuth2Client
      *
      * @throws FacebookResponseException
      */
-    protected function sendRequestWithClientParams($endpoint, array $params, $accessToken = null)
+    public function sendRequestWithClientParams($endpoint, array $params, $accessToken = null)
     {
         $params += $this->getClientParams();
 
